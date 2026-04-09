@@ -122,12 +122,13 @@ export default function ContactPage() {
               </button>
             </form>
 
-            {submitted ? (
-              <p className="mt-4 rounded-lg bg-[#F4511E]/10 px-4 py-3 text-sm text-[#111111]">
-                Thanks. Your message has been captured locally in the form for
-                now. We can wire this up to email or a backend next.
-              </p>
-            ) : null}
+              {submitted ? (
+                <p className="mt-4 rounded-lg bg-[#F4511E]/10 px-4 py-3 text-sm text-[#111111]">
+                  Thanks. Your message has been captured locally in the form for
+                  now. We can wire this up next so all inquiries are routed to
+                  info@digipaddles.com.
+                </p>
+              ) : null}
           </div>
 
           <div>
@@ -140,7 +141,12 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="mb-1 font-bold">Email</h3>
-                  <p className="text-gray-600">Business@digipaddles.com</p>
+                  <a
+                    href="mailto:info@digipaddles.com"
+                    className="text-gray-600 transition-colors hover:text-[#F4511E]"
+                  >
+                    info@digipaddles.com
+                  </a>
                 </div>
               </div>
 

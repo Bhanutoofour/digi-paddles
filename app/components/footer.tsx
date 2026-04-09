@@ -113,7 +113,12 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0 text-[#F4511E]" />
-                <span className="text-white/65">Business@digipaddles.com</span>
+                <a
+                  href="mailto:info@digipaddles.com"
+                  className="text-white/65 transition-colors duration-200 hover:text-[#F4511E]"
+                >
+                  info@digipaddles.com
+                </a>
               </div>
             </div>
           </div>

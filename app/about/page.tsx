@@ -293,9 +293,10 @@ export default function AboutPage() {
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded bg-white px-8 py-4 text-sm font-extrabold uppercase tracking-[0.07em] text-[#FF5722] transition hover:bg-gray-100"
+              className="inline-flex items-center justify-center gap-2 rounded bg-white px-8 py-4 text-sm font-extrabold uppercase tracking-[0.07em] !text-[#FF5722] transition hover:bg-gray-100 hover:!text-[#D84315]"
             >
-              Start a Project <ArrowRight className="h-5 w-5" />
+              <span className="!text-inherit">Start a Project</span>
+              <ArrowRight className="h-5 w-5 !text-inherit" />
             </Link>
             <Link
               href="/portfolio"
